@@ -4,18 +4,15 @@ A command-line tool that takes a bare-bones Ableton Live session (a loop with st
 
 No dependencies beyond the Python standard library.
 
+## Splice?
+Splice, the vast online sample library platform (subscription _not required_), has a feature called Stacks used to quickly build basic musical ideas. This has made creating banger 8-bar loops really easy on my phone. 
+
+However, overcoming the 8-bar loop is one of the hardest problems in music, So, with an ever growing collection of 8-bar loops and endless ideas for improving and arranging those loops, I tried one last time to get a working, arranged, Ableton Live set out of Claude after months of failed attempts with claude-code. To my great surprise, I was able to get Claude Chat to produce a working arranged Ableton Live set and working Python code, this library is the output of that magical chat session. 
+
+This tool _should_ free up my very limited creative time to edit the arrangement, add my own melodies, add fills, chops, effects, and do the fun parts of electronic music production and finish more tracks. 
+
 ## Example Track
-[Eight Bar Loop](https://soundcloud.com/dj-macchiato/i_can_give_you_everything_stack_8_bar_loop-1?in=dj-macchiato/sets/splice-arranger-example)
-
-[Arranged](https://soundcloud.com/dj-macchiato/i_can_give_you_everything_arranged-2?in=dj-macchiato/sets/splice-arranger-example)
-
-## What's the deal with Splice? 
-
-Well, I was making 8-bar loops in Splice's Stack feature on my phone. Getting out of the 8-bar loop is one of the hardest problems in music, so I wondered if Claude could help me. 
-
-Given Splice Stacks can be exported to an Ableton Live session (on mobile only currently), I had Claude build a basic song arrangement so I can focus on producing the fun parts: melodies, rhythms, fills, chops, unique effects and not waste cycles perfecting the 8-bar loop. 
-
-This library is the output of my trial-and-error with Claude as a deterministic script that produces a basic song arrangement wihtout needing AI tools. 
+[Start with a Splice Stack](https://splice.com/sounds/create/share/lo-fi/i-can-give-you-everything/481e566e-7913-40da-b1ea-9a787b4a1bc7) (under the Create tab on desktop), [it's just an 8-bar loop](https://soundcloud.com/dj-macchiato/i_can_give_you_everything_stack_8_bar_loop-1?in=dj-macchiato/sets/splice-arranger-example), download the Ableton set, run this tool, open and export from Ableton, and you get the [arranged version of your stack.](https://soundcloud.com/dj-macchiato/i_can_give_you_everything_arranged-2?in=dj-macchiato/sets/splice-arranger-example)
 
 ## What it does
 
@@ -90,16 +87,19 @@ python als_arranger.py my_loop.zip --roles kick=14,hats=13,vocals=18
 python als_arranger.py --list-roles
 ```
 
-### Real example
+### A Real Example
+The examples linked in the top of this README were created using this exact flow. 
 
-Using the included example project `"i can give you everything [Ableton Live project].zip"`:
+Create a Stack on Splice. It's [just a repeating 8-bar loop.](https://soundcloud.com/dj-macchiato/i_can_give_you_everything_stack_8_bar_loop-1?in=dj-macchiato/sets/splice-arranger-example)
 
-**Listen to the original 8-bar loop:** `examples/i can give you everything [Stereo mix (WAV)].wav`
+Download the .als file, requires using credits for any unpurchased samples used in the Stack. 
+
+For this example I used the project `"i can give you everything [Ableton Live project].zip"` unmodifed from Splice's export.
 
 **Run the arranger:**
 
 ```bash
-python als_arranger.py "examples/i can give you everything  [Ableton Live project].zip" --dry-run --verbose
+python als_arranger.py "i can give you everything  [Ableton Live project].zip" --dry-run --verbose
 ```
 
 **Output:**
@@ -186,11 +186,17 @@ Track                  Section              Bars
 🔍  Dry run complete — no files written.
 ```
 
-This example shows how the tool:
-- Detected 7 tracks from the Splice Stack export
-- Auto-classified them (bass, pad, perc, vocals, keys, etc.)
-- Created a 5:45 arrangement with labeled sections
-- Planned 38 clip placements following the drop structure
+Then run without --dry-run to create the arranged version.
+
+Unzip the new arranged version and open the set in Ableton. You will likely have to locate the referenced files in the media explorer. 
+
+Switch to arrangement view, enable arrangement mode, cmd+a, cmd+l, cmd+r (select all, loop, export) and you end up with [a basic arrangement that sounds like this.](https://soundcloud.com/dj-macchiato/i_can_give_you_everything_arranged-2?in=dj-macchiato/sets/splice-arranger-example) This audio is the unmodified export from this tool, no changes to the arrangement or plugins added.
+
+Add your magic
+
+...
+
+Profit!
 
 ## Track role detection
 
