@@ -4,6 +4,11 @@ A command-line tool that takes a bare-bones Ableton Live session (a loop with st
 
 No dependencies beyond the Python standard library.
 
+## Example Track
+[Eight Bar Loop](https://soundcloud.com/dj-macchiato/i_can_give_you_everything_stack_8_bar_loop-1?in=dj-macchiato/sets/splice-arranger-example)
+
+[Arranged](https://soundcloud.com/dj-macchiato/i_can_give_you_everything_arranged-2?in=dj-macchiato/sets/splice-arranger-example)
+
 ## What's the deal with Splice? 
 
 Well, I was making 8-bar loops in Splice's Stack feature on my phone. Getting out of the 8-bar loop is one of the hardest problems in music, so I wondered if Claude could help me. 
