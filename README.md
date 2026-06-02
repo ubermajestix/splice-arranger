@@ -12,7 +12,23 @@ However, overcoming the 8-bar loop is one of the hardest problems in music, So, 
 This tool _should_ free up my very limited creative time to edit the arrangement, add my own melodies, add fills, chops, effects, and do the fun parts of electronic music production and finish more tracks. 
 
 ## Example Track
-[Start with a Splice Stack](https://splice.com/sounds/create/share/lo-fi/i-can-give-you-everything/481e566e-7913-40da-b1ea-9a787b4a1bc7) (under the Create tab on desktop), [it's just an 8-bar loop](https://soundcloud.com/dj-macchiato/i_can_give_you_everything_stack_8_bar_loop-1?in=dj-macchiato/sets/splice-arranger-example), download the Ableton set, run this tool, open and export from Ableton, and you get the [arranged version of your stack.](https://soundcloud.com/dj-macchiato/i_can_give_you_everything_arranged-2?in=dj-macchiato/sets/splice-arranger-example)
+### Step 1: Splice to Abelton
+[Start with a Splice Stack](https://splice.com/sounds/create/share/lo-fi/i-can-give-you-everything/481e566e-7913-40da-b1ea-9a787b4a1bc7) (under the Create tab on desktop), [it's just an 8-bar loop](https://soundcloud.com/dj-macchiato/i_can_give_you_everything_stack_8_bar_loop-1?in=dj-macchiato/sets/splice-arranger-example), and download the Ableton set. As you can see it's just clips in session view, no arrangement. 
+
+
+<img height="300" alt="Screenshot 2026-06-02 at 12 31 10 PM" src="https://github.com/user-attachments/assets/af4f8ede-f96e-418c-a06e-27cf2c4365a1" />
+<img height="300" alt="Screenshot 2026-06-02 at 12 40 35 PM" src="https://github.com/user-attachments/assets/36eef9ed-6ec7-4e7e-afe3-994dcd1d855e" />
+<img height="300" alt="Screenshot 2026-06-02 at 12 40 25 PM" src="https://github.com/user-attachments/assets/1303b01f-0923-4dc4-9320-95aa7ccdeec9" />
+
+
+### Step 2: Python to Arrangement
+
+Run this python script, open and export from Ableton, and you get the [arranged version of your stack.](https://soundcloud.com/dj-macchiato/i_can_give_you_everything_arranged-2?in=dj-macchiato/sets/splice-arranger-example)
+
+<img width="677" height="435" alt="Screenshot 2026-06-02 at 12 53 03 PM" src="https://github.com/user-attachments/assets/1f205a0b-0b71-474f-a82f-fbb74889cb38" />
+<img height="300" alt="Screenshot 2026-06-02 at 12 32 46 PM" src="https://github.com/user-attachments/assets/d073ae00-1d2c-4e6c-800b-81997a0e87ad" />
+<img height="300" alt="Screenshot 2026-06-02 at 12 32 15 PM" src="https://github.com/user-attachments/assets/af2b9d5f-d491-4e73-ae66-15db4b34a3ae" />
+
 
 ## What it does
 
